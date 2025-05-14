@@ -17,8 +17,9 @@ describe('sign Up Flow - pom', () => {
               RegisterPage.getEnterAccountInfoText().should('be.visible')
         }
         })
-    });
+        
     cy.wait(3000); // 3 seconds
+    });
 
 });
 

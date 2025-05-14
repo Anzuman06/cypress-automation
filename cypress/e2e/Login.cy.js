@@ -16,8 +16,7 @@ describe('Automation excercise Login using POM',() => {
            loginPage. getLoggedInUsername().should('be.visible')
         }
     })
-    
+    cy.wait(3000) ;// 3 seconds
    })
-cy.wait(3000) ;// 3 seconds
 
 })
