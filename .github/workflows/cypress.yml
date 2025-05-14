@@ -16,10 +16,13 @@ jobs:
       - name: ⬇️ Checkout code
         uses: actions/checkout@v3
 
-      - name: 🧪 Run Cypress Tests
-        uses: cypress-io/github-action@v6
+      - name: 🟢 Setup Node.js 16
+        uses: actions/setup-node@v3
         with:
           node-version: 16
+
+      - name: 🧪 Run Cypress Tests
+        uses: cypress-io/github-action@v6
 
       - name: 📸 Upload Screenshots (if any)
         if: always()

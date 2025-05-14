@@ -10,4 +10,6 @@ describe('user registration', () => {
     cy.get('[data-test="password"]').type('secret_sauce')
     cy.get('[id= "login-button"]').click()
   })
+  cy.wait(3000) // 3 seconds
+
 })
