@@ -20,7 +20,8 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           node-version: 16
-           - name: 📸 Upload Screenshots (if any)
+
+      - name: 📸 Upload Screenshots (if any)
         if: always()
         uses: actions/upload-artifact@v4
         with:
