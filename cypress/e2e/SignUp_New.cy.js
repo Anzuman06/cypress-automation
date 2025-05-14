@@ -18,7 +18,7 @@ describe('sign Up Flow - pom', () => {
         }
         })
     });
-    cy.wait(3000) // 3 seconds
+    cy.wait(3000); // 3 seconds
 
 });
 

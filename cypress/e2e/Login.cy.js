@@ -18,6 +18,6 @@ describe('Automation excercise Login using POM',() => {
     })
     
    })
-cy.wait(3000) // 3 seconds
+cy.wait(3000) ;// 3 seconds
 
 })
