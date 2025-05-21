@@ -30,6 +30,6 @@ describe('Complete sign up and go to the enter info page', () => {
       cy.contains('Account Created!').should('be.visible');
       cy.wait(3000);
       EnterInfoPage.clickContinueButton().click();
-      EnterInfoPage.verifyLoggedInAs(userName);
+      EnterInfoPage.verifyLoggedInAs(userName);    // Verify "Logged in as"
     });
 });
