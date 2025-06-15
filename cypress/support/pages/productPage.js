@@ -1,5 +1,5 @@
 class ProductPage {
-  visitProductPage() {
+  visitHomePage() {
     cy.visit('https://automationexercise.com/');
   }
 

@@ -35,7 +35,7 @@ describe('Complete purchase flow', () => {
     EnterInfoPage.verifyLoggedInAs(userName);
 
     // Add products
-    productPage.visitProductPage();
+    productPage.visitHomePage();
     productPage.goToProductsPage();
     productPage.scrollToCategorySection();
     productPage.selectWomenCategory();

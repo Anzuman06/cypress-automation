@@ -16,10 +16,10 @@ jobs:
       - name: ⬇️ Checkout code
         uses: actions/checkout@v3
 
-      - name: 🟢 Setup Node.js 16
+      - name: 🟢 Setup Node.js 22
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 22
 
       - name: 🧪 Run Cypress Tests
         uses: cypress-io/github-action@v6

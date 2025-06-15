@@ -20,6 +20,6 @@ class LoginPage{
  }  
  getWrongCredentials(){
    return cy.contains('Your email or password is incorrect!')
-}
+ }
 }
 export default LoginPage
