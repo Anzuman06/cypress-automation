@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test":  "cypress run",
+    "test": "cypress run",
     "cypress:open": "npx cypress open",
-    "cy:run": "npx cypress run --env baseUrl= https://www.saucedemo.com/ -- headed --spec"
+    "cy:run": "npx cypress run --env baseUrl= https://automationexercise.com/ -- headed --spec"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.0",
     "cypress": "^14.3.3"
   }
 }

@@ -14,6 +14,7 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import '@shelex/cypress-allure-plugin';
 import './commands'
 Cypress.on('uncaught:exception', (err, runnable) => {
   // prevents Cypress from failing the test on app-level JS errors

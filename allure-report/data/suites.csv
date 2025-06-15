@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","9093","Should fill out and submit the contact form successfully","","Sun Jun 15 15:34:08 BDT 2025","passed","Sun Jun 15 15:34:17 BDT 2025","","Contact page form submission","",""
+"","15342","should sign up 1st and then enter others required information","","Sun Jun 15 15:34:20 BDT 2025","passed","Sun Jun 15 15:34:35 BDT 2025","","Complete sign up and go to the enter info page","",""
+"","34569","should sign up, add product to cart and place order","","Sun Jun 15 15:34:38 BDT 2025","passed","Sun Jun 15 15:35:12 BDT 2025","","Complete purchase flow","",""
+"","10278","should log in successfully with valid credentials","","Sun Jun 15 15:33:43 BDT 2025","passed","Sun Jun 15 15:33:54 BDT 2025","","Automation excercise Login using POM","",""
+"","9356","should show error if email is already registered","","Sun Jun 15 15:33:56 BDT 2025","passed","Sun Jun 15 15:34:05 BDT 2025","","sign Up Flow - pom","",""
