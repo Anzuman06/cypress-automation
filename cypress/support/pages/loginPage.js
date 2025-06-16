@@ -1,9 +1,9 @@
 class LoginPage{
     visit(){
-        cy.visit('https://automationexercise.com/')
+        cy.visit('https://automationexercise.com/');
     }
  clickLoginLink(){
-   cy.contains('Signup / Login').click()
+   cy.contains('Signup / Login').click();
  }
  enterEmail(email){
     cy.get('input[data-qa="login-email"]').type(email)
@@ -22,4 +22,4 @@ class LoginPage{
    return cy.contains('Your email or password is incorrect!')
  }
 }
-export default LoginPage
+export default new LoginPage()

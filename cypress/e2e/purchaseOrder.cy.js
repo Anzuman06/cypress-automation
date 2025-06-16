@@ -1,7 +1,7 @@
 import RegisterPage from '../support/pages/registerPage';
 import EnterInfoPage from '../support/pages/enterInfoPage';
-import productPage from '../support/pages/productPage';
-import cartPage from '../support/pages/cartPage';
+import ProductPage from '../support/pages/productPage';
+import CartPage from '../support/pages/cartPage';
 
 describe('Complete purchase flow', () => {
   it('should sign up, add product to cart and place order', () => {
@@ -35,18 +35,18 @@ describe('Complete purchase flow', () => {
     EnterInfoPage.verifyLoggedInAs(userName);
 
     // Add products
-    productPage.visitHomePage();
-    productPage.goToProductsPage();
-    productPage.scrollToCategorySection();
-    productPage.selectWomenCategory();
-    productPage.addProductToCart(0); // First
-    productPage.addProductToCart(1); // Second
-    productPage.viewProductAndAddToCart();
-    productPage.clickViewCartButton();
+    ProductPage.visitHomePage();
+    ProductPage.goToProductsPage();
+    ProductPage.scrollToCategorySection();
+    ProductPage.selectWomenCategory();
+    ProductPage.addProductToCart(0); // First
+    ProductPage.addProductToCart(1); // Second
+    ProductPage.viewProductAndAddToCart();
+    ProductPage.clickViewCartButton();
 
     // Checkout
-    cartPage.proceedToCheckout();
-    cartPage.placeOrder();
+    CartPage.proceedToCheckout();
+    CartPage.placeOrder();
 
     const card = {
       name: 'Jane Doe',
@@ -56,7 +56,7 @@ describe('Complete purchase flow', () => {
       year: '2029'
     };
 
-    cartPage.fillPaymentDetails(card);
-    cartPage.viewOrderPlaced();
+    CartPage.fillPaymentDetails(card);
+    CartPage.viewOrderPlaced();
   });
 });

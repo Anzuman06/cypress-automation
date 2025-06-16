@@ -5,6 +5,8 @@ class ProductPage {
 
   goToProductsPage() {
     cy.get('a[href="/products"]').click();
+    cy.url().should('include', '/products');
+    cy.get('.title.text-center').should('contain.text', 'All Products'); 
   }
 
   scrollToCategorySection() {
@@ -15,6 +17,17 @@ class ProductPage {
     cy.contains('Women').click();
     cy.contains('Dress').click();
   }
+searchProduct(search){
+   cy.get('#search_product').type(search.item);
+   cy.get('#submit_search').click();
+   cy.get('.features_items').scrollIntoView();
+   cy.contains('h2', 'Searched Products').should('be.visible');
+   cy.get('.features_items .productinfo p').each(($el) => {
+   cy.wrap($el).invoke('text').then((text) => {
+      expect(text.toLowerCase()).to.include(search.item.toLowerCase());
+  });
+});
+}
 
   addProductToCart(index) {
     cy.get('.features_items .col-sm-4')
