@@ -1,4 +1,4 @@
-import RegisterPage from '../support/pages/registerPage'
+import RegisterPage from '../../support/pages/registerPage'
 
 describe('sign Up Flow - pom', () => {
 

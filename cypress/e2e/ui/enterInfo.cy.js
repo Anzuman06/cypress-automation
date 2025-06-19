@@ -1,5 +1,5 @@
-import RegisterPage from '../support/pages/registerPage'
-import EnterInfoPage from '../support/pages/enterInfoPage'
+import RegisterPage from '../../support/pages/registerPage'
+import EnterInfoPage from '../../support/pages/enterInfoPage'
 describe('Complete sign up and go to the enter info page', () => {
     it('should sign up 1st and then enter others required information', () => {
        const randomEmail = `user${Date.now()}@test.com`;

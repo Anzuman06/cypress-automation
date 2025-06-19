@@ -1,4 +1,4 @@
-import LoginPage from '../support/pages/loginPage'
+import LoginPage from '../../support/pages/loginPage'
 describe('Automation excercise Login using POM',() => {
     it('should log in successfully with valid credentials', () => {
     LoginPage.visit();

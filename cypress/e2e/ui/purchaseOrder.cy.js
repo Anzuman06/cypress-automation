@@ -1,7 +1,7 @@
-import RegisterPage from '../support/pages/registerPage';
-import EnterInfoPage from '../support/pages/enterInfoPage';
-import ProductPage from '../support/pages/productPage';
-import CartPage from '../support/pages/cartPage';
+import RegisterPage from '../../support/pages/registerPage';
+import EnterInfoPage from '../../support/pages/enterInfoPage';
+import ProductPage from '../../support/pages/productPage';
+import CartPage from '../../support/pages/cartPage';
 
 describe('Complete purchase flow', () => {
   it('should sign up, add product to cart and place order', () => {

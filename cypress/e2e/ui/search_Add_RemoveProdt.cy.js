@@ -1,6 +1,6 @@
-import ProductPage from '../support/pages/productPage';
-import CartPage from '../support/pages/cartPage';
-import LoginPage from '../support/pages/loginPage';
+import ProductPage from '../../support/pages/productPage';
+import CartPage from '../../support/pages/cartPage';
+import LoginPage from '../../support/pages/loginPage';
 describe('Search for Item, Add to cart, Review the product, remove items and checkout finally', () => {
  it('should search item to add and remove excess items before checkout' , () => {
     //login first

@@ -1,4 +1,4 @@
-import ContactUs from '../support/pages/contactUs';
+import ContactUs from '../../support/pages/contactUs';
 describe('Contact page form submission', () => {
   it('Should fill out and submit the contact form successfully', () => {
      ContactUs.visitHomePage();
